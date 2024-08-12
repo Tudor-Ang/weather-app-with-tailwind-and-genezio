@@ -1,13 +1,10 @@
-name: weather-app-with-tailwind-and-genezio
+name: testdeploy
 region: us-east-1
-cloudProvider: genezio
+yamlVersion: 0
 frontend:
     path: client/dist
-    subdomain: lightgoldenrodyellow-these-wombat
-scripts:
-    preBackendDeploy: npm install
-    preFrontendDeploy: npm install && npm run build
-workspace:
-    backend: server
-    frontend: client
-language: ts
+    publish: ""
+    scripts:
+        deploy: null
+        build: null
+    subdomain: testdeploy
